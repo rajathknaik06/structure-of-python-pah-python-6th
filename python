@@ -1,0 +1,27 @@
+""" 
+Problem Statement
+
+
+
+Jade, a physics enthusiast, is analyzing the dynamics of a jump using an advanced energy model. The energy required for a jump is a function of the takeoff speed and weight. The model uses the square of the takeoff speed, multiplied by the weight, and then divided by 20 to determine the initial energy.
+
+
+
+Given the initial energy, and the weight of the jumper, calculate the takeoff speed.
+
+Input format :
+The first line of input consists of a float A, representing the initial energy of the model (in units).
+
+The second line of input consists of a float W, representing the weight of the jumper (in units).
+
+Output format :
+The output displays "Takeoff speed: " followed by a float representing the calculated original takeoff speed with two decimal place"""
+
+# You are using Python
+initial_energy = float(input())
+weight = float(input())
+
+speed = (initial_energy * 20) / weight
+takeoff_speed = speed ** 0.5
+
+print(f"Takeoff speed: {takeoff_speed:.2f}")
